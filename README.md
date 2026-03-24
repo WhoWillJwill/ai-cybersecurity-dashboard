@@ -195,6 +195,17 @@ To use it, open the file in **Power BI Desktop** and update the data source conn
 
 This project uses a `.env` file to keep credentials out of source code. **Never commit your `.env` file.**
 
+Copy `.env.example` to `.env` and fill in your values:
+
+```
+PG_DB=security_Dashboard
+PG_USER=your_postgres_username
+PG_PASSWORD=your_postgres_password
+PG_HOST=localhost
+PG_PORT=5432
+```
+
+---
 
 
 ## License
