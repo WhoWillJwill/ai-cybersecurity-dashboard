@@ -159,7 +159,7 @@ One-time migration script. Reads all rows from a local `security.db` SQLite file
 python scripts/sqlite_to_postgres.py
 ```
 
-> **Note:** Place your `security.db` file in the project root before running.
+
 
 ---
 
@@ -195,23 +195,7 @@ To use it, open the file in **Power BI Desktop** and update the data source conn
 
 This project uses a `.env` file to keep credentials out of source code. **Never commit your `.env` file.**
 
-Copy `.env.example` to `.env` and fill in your values:
 
-```
-PG_DB=security_Dashboard
-PG_USER=your_postgres_username
-PG_PASSWORD=your_postgres_password
-PG_HOST=localhost
-PG_PORT=5432
-```
-
----
-
-## ⚠️ Security Note
-
-Ensure your `.env` file is listed in `.gitignore` before pushing to GitHub. Database credentials should never be committed to version control.
-
----
 
 ## License
 
